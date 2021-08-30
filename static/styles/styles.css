@@ -1,4 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap");
+.carousel__container::-webkit-scrollbar, body::-webkit-scrollbar {
+  width: 0.7rem;
+  height: 1rem;
+}
+
+.carousel__container::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  -webkit-transition: all 450s linear;
+  transition: all 450s linear;
+}
+
+.carousel__container::-webkit-scrollbar-thumb:hover, body::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+  border-radius: 10px;
+}
+
 .header a {
   color: #fff;
   text-decoration: none;
@@ -186,6 +203,12 @@
   text-align: center;
 }
 
+.carousel__p {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+}
+
 .carousel:hover .carousel__container::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -195,7 +218,7 @@
 }
 
 .carousel__container {
-  height: 23rem;
+  height: 21rem;
   padding-top: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -289,11 +312,49 @@
   color: #fff;
 }
 
+.carousel-item__details--title:hover {
+  text-decoration: underline;
+}
+
 .carousel-item__details--date {
   margin: 0 0 1.5rem 1.2rem;
   font-size: 0.7rem;
   text-decoration: none;
   color: #fff;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  height: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-right: 2rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .thanks {
+  color: #fff;
+}
+
+.footer .thanks span {
+  color: red;
 }
 
 * {
@@ -304,5 +365,17 @@
 
 body {
   background-color: #1E1E1E;
+}
+
+hr {
+  margin: 2rem 0;
+  border: 1px dashed #fff;
+}
+
+.soon {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  margin: 2rem 0;
 }
 /*# sourceMappingURL=styles.css.map */

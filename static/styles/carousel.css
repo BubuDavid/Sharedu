@@ -33,6 +33,12 @@
   text-align: center;
 }
 
+.carousel__p {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+}
+
 .carousel:hover .carousel__container::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -42,7 +48,7 @@
 }
 
 .carousel__container {
-  height: 23rem;
+  height: 21rem;
   padding-top: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,6 +140,10 @@
   margin-right: 1rem;
   text-decoration: none;
   color: #fff;
+}
+
+.carousel-item__details--title:hover {
+  text-decoration: underline;
 }
 
 .carousel-item__details--date {
